@@ -8,7 +8,7 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
     if (e.request.url.includes('.jpeg') || e.request.url.includes('.jpg')) {
-        let response = fetch('/img/gato2.jpg')
+        let response = fetch('./img/gato2.jpg')
         e.respondWith(response)
     }
 
